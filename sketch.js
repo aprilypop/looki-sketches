@@ -35,9 +35,13 @@ function setup() {
   arrFruitM.push(fruit3, fruit4, fruit5);
   arrFruitL.push(fruit6, fruit7, fruit8, fruit9);
   
-  createCanvas(innerWidth, innerHeight);
+  createCanvas(windowWidth, windowHeight);
   
   generateRope(argsNum); 
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
