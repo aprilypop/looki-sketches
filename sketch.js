@@ -35,7 +35,8 @@ function setup() {
   arrFruitM.push(fruit3, fruit4, fruit5);
   arrFruitL.push(fruit6, fruit7, fruit8, fruit9);
   
-  createCanvas(windowWidth, windowHeight);
+  let sketchCanvas = createCanvas(windowWidth, windowHeight);
+  sketchCanvas.parent('looki-2');
   
   generateRope(argsNum); 
 }
