@@ -16,17 +16,18 @@ let arrFruitL = [];
 let font, font2, fruit1, fruit2, fruit3, fruit4, fruit5, fruit6, fruit7, fruit8, fruit9;
 
 function preload() {
-  font = loadFont('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e3aeec538779abe71deab_ABCSocial-Black-Trial.otf');
-  font2 = loadFont('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e3a51e18dd80acfd5ea1b_ABCSocialMono-Black-Trial.otf');
-  fruit1 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bea11631c5a10bc838_Looki-Fruits-01.png');
-  fruit2 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bfdb2f474f7835c69f_Looki-Fruits-02.png');
-  fruit3 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bf573dabb118cc4c77_Looki-Fruits-03.png');
-  fruit4 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bfea4963d559dd7d66_Looki-Fruits-04.png');
-  fruit5 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bf2b16747faec0806c_Looki-Fruits-05.png');
-  fruit6 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bf5e4577623322a99f_Looki-Fruits-06.png');
-  fruit7 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bf7afb8198b1e071a2_Looki-Fruits-07.png');
-  fruit8 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bf2a8bd972a60916d4_Looki-Fruits-08.png');
-  fruit9 = loadImage('https://cdn.prod.website-files.com/659f2b4fdb355e743c422325/690e36bf61ce9f1f34db52b0_Looki-Fruits-09.png');
+  font = loadFont('ABCSocialCondensed-Black-Trial.otf');
+  font2 = loadFont('ABCSocialMono-Black-Trial.otf');
+  fruit1 = loadImage('Looki-Fruits-01.png');
+  fruit2 = loadImage('Looki-Fruits-02.png');
+  fruit3 = loadImage('Looki-Fruits-03.png');
+  fruit4 = loadImage('Looki-Fruits-04.png');
+  fruit5 = loadImage('Looki-Fruits-05.png');
+  fruit6 = loadImage('Looki-Fruits-06.png');
+  fruit7 = loadImage('Looki-Fruits-07.png');
+  fruit8 = loadImage('Looki-Fruits-08.png');
+  fruit9 = loadImage('Looki-Fruits-09.png');
+  logo = loadImage('Looki Logo.png');
 }
 
 function setup() {
