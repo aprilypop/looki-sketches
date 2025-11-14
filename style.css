@@ -35,3 +35,10 @@ canvas {
     position: absolute;
     inset: 0% 0% auto;
 }
+@font-face {
+  font-family: ABC Social Condensed Black;
+  src: url("ABCSocialCondensed-Black-Trial.woff2") format("woff2"), url("ABCSocialCondensed-Black-Trial.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
