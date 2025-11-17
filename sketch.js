@@ -62,7 +62,7 @@ function draw() {
   textFont(font);
   textLeading(28);
   textSize(30);
-  text('Touch: '+tapCount+'\n This text is to indicate change', 20, 45);
+  //text('Touch: '+tapCount+'\n This text is to indicate change', 20, 45);
 
 }
 
