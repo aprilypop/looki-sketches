@@ -4,6 +4,7 @@ html, body {
 	font-family: ABC Social Condensed Black;
 	font-weight: 900;
   font-size: 12px;
+  background-color: whitesmoke;
 }
 canvas {
   display: block;
@@ -25,7 +26,7 @@ canvas {
     padding: 2vw;
     display: flex;
     position: absolute;
-    inset: 0% 0% 3% auto;
+    inset: 0% 0% 3% 0%;
 }
 .looki-logo {
     flex: 0 auto;
@@ -61,7 +62,7 @@ body {
   flex-wrap: nowrap;
   gap: 0px;
   overflow: visible;
-  transition: left 4s linear;
+  transition: left 6.5s linear;
   font-size: 1.5rem;
 }
 .copyright {
@@ -75,25 +76,41 @@ body {
   font-size: 1.5rem;
   margin:12px;
   position:absolute;
-  inset: 0.5rem 0.5rem auto;
+  inset: 0.5rem 0.5rem auto auto;
   z-index:10;
   display: flex;
   gap: 1rem;
   align-items: flex-start;
 }
-a {
-  text-decoration: underline;
+.button > a {
+  text-decoration: none;
+  /*text-underline-offset: 0.25rem;*/
   color: black;
+  /*color: white;
+  mix-blend-mode: difference;*/
+  background-color: #53E399;
+  border-radius: 2rem;
+  border: .25rem solid black;
 }
 a:hover {
   text-decoration: none;
+  transition: transform .25;
 }
 .sign-up{
   /*transform: rotate(90deg);*/
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
+  padding: 1.25rem 0.75rem 1.25rem 0.55rem;
   text-orientation: mixed;
   margin-top: 0.3rem;
 }
+.sign-up:hover{
+  background-color: #DCEDFF;
+  transform: rotate(-5deg)
+}
 .social {
-  text-underline-offset: 0.25rem;
+  padding: 0.75rem 1.25rem 0.55rem 1.25rem;
+}
+.social:hover{
+  background-color: #ED7BC9;
+  transform: rotate(5deg)
 }

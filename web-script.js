@@ -42,18 +42,18 @@ window.onload = (event) => {
                 cr1W.style.transition = "left 0s linear";
                 cr1W.style.left = "0%";
                 setTimeout(() => {
-                    cr1W.style.transition = "left 4s linear";
+                    cr1W.style.transition = "left 6.5s linear";
                     cr1W.style.left=moveCoEf;
-                }, "1");
+                }, "0");
             setInterval(() => {
                 cr1W.style.transition = "left 0s linear";
                 cr1W.style.left = "0%";
                 setTimeout(() => {
-                    cr1W.style.transition = "left 4s linear";
+                    cr1W.style.transition = "left 6.5s linear";
                     cr1W.style.left=moveCoEf;
-                }, "1");
-            }, "4001");
-        }, "4000");
+                }, "0");
+            }, "6000");
+        }, "6000");
     }, "2000");
     
 };
