@@ -13,6 +13,7 @@ let arrFruitS = [];
 let arrFruitM = [];
 let arrFruitL = [];
 let tapCount = 0;
+const canvas = document.getElementById("looki-2");
 
 let font, font2, fruit1, fruit2, fruit3, fruit4, fruit5, fruit6, fruit7, fruit8, fruit9;
 
@@ -40,6 +41,7 @@ function setup() {
   sketchCanvas.parent('looki-2');
   
   generateRope(argsNum); 
+  canvas.addEventListener("touchend", handleEnd);
 }
 
 function windowResized() {
@@ -71,6 +73,7 @@ function mousePressed(){
   tapCount++;
 }
 
+
 function handleEnd(event) {
   event.preventDefault();
 
@@ -83,7 +86,6 @@ function handleEnd(event) {
     tapCount++;
   }
 }
-canvas.addEventListener("touchend", handleEnd);
 
 function mouseMoved(){
   for (var i in argsArray) {
