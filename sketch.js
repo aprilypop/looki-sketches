@@ -63,7 +63,7 @@ function draw() {
   textFont(font);
   textLeading(28);
   textSize(30);
-  text('Touch X: '+touch.x+'\nTouch Y+ '+touch.y, 20, 45);
+  text('Touch: '+touch, 20, 45);
 
 }
 
