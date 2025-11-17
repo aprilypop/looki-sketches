@@ -13,7 +13,6 @@ let arrFruitS = [];
 let arrFruitM = [];
 let arrFruitL = [];
 let tapCount = 0;
-const canvas = document.getElementById("looki-2");
 
 let font, font2, fruit1, fruit2, fruit3, fruit4, fruit5, fruit6, fruit7, fruit8, fruit9;
 
@@ -40,8 +39,7 @@ function setup() {
   let sketchCanvas = createCanvas(windowWidth, windowHeight);
   sketchCanvas.parent('looki-2');
   
-  generateRope(argsNum); 
-  canvas.addEventListener("touchend", handleEnd);
+  generateRope(argsNum);
 }
 
 function windowResized() {
@@ -73,18 +71,9 @@ function mousePressed(){
   tapCount++;
 }
 
-
-function handleEnd(event) {
-  event.preventDefault();
-
-  for (const changedTouch of event.changedTouches) {
-    const touch = ongoingTouches.get(changedTouch.identifier);
-    if (!touch) {
-      console.error(`End: Could not find touch ${changedTouch.identifier}`);
-      continue;
-    }
-    tapCount++;
-  }
+function touchEnded(event) {
+  // Code to run that uses the event.
+  tapCount++;
 }
 
 function mouseMoved(){
@@ -494,3 +483,4 @@ class Rope {
     this._prevDelta = dt;
   }
 }
+

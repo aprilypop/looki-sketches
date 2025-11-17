@@ -70,9 +70,6 @@ body {
 
 }
 .copyright {
-  /*@media (max-width: 600px) {
-    font-size:32px;
-  }*/
 	margin: 12px;
   white-space: nowrap;
 }
