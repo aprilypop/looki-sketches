@@ -62,7 +62,7 @@ function draw() {
   textFont(font);
   textLeading(28);
   textSize(30);
-  text('Touch: '+touches.length, 20, 45);
+  text('Touch: '+tapCount, 20, 45);
 
 }
 
@@ -73,6 +73,7 @@ function mousePressed(){
 function touchEnded(event) {
   // Code to run that uses the event.
   touch = touches[touches.length()-1];
+  tapCount = touches.length();
   generateRope(1, touch.x, touch.y);
 }
 
