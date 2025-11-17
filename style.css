@@ -4,8 +4,8 @@ html, body {
 	font-family: ABC Social Condensed Black;
 	font-weight: 900;
   background-color: whitesmoke;
-  @media screen and (max-width: 600px) {
-    font-size: 24px;
+  @media screen {
+    font-size:24px;
   }
 }
 
@@ -70,6 +70,9 @@ body {
 
 }
 .copyright {
+  @media screen {
+    font-size:32px;
+  }
 	margin: 12px;
   white-space: nowrap;
 }
