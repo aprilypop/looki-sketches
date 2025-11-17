@@ -70,11 +70,24 @@ function mousePressed(){
   generateRope(1, mouseX, mouseY);
 }
 
-function touchEnded(event) {
+function touchStarted(event) {
   // Code to run that uses the event.
-  touch = touches[touches.length()-1];
+  for (let touch of touches) {
+    generateRope(1, touch.x, touch.y);
+  }
   tapCount = touches.length();
-  generateRope(1, touch.x, touch.y);
+}
+
+function touchMoved(){
+  for (var i in argsArray) {
+    let point = ropeArray[i].getPoint(floor((ropeArray[i].getPointLength()-1)/2));
+    for (let touch of touches) {
+      if (Math.hypot(touch.x-point.pos.x, touch.y-point.pos.y) <200) {
+        point.pos.x = touch.x;
+        point.pos.y = touch.y;
+      }
+    }
+  }
 }
 
 function mouseMoved(){
