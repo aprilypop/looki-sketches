@@ -13,6 +13,7 @@ let arrFruitS = [];
 let arrFruitM = [];
 let arrFruitL = [];
 let tapCount = 0;
+let touch;
 
 let font, font2, fruit1, fruit2, fruit3, fruit4, fruit5, fruit6, fruit7, fruit8, fruit9;
 
@@ -62,18 +63,17 @@ function draw() {
   textFont(font);
   textLeading(28);
   textSize(30);
-  text('Tap count: '+tapCount, 20, 45);
+  text('Touch X: '+touch.x+'\nTouch Y+ '+touch.y, 20, 45);
 
 }
 
 function mouseReleased(){
   generateRope(1, mouseX, mouseY);
-  tapCount++;
 }
 
 function touchEnded(event) {
   // Code to run that uses the event.
-  tapCount++;
+  touch = touches[touches.length()-1];
 }
 
 function mouseMoved(){
