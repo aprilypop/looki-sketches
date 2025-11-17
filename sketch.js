@@ -66,7 +66,7 @@ function draw() {
 
 }
 
-function mousePressed(){
+function mouseReleased(){
   generateRope(1, mouseX, mouseY);
   tapCount++;
 }
