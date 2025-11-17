@@ -12,6 +12,7 @@ let arrTxt = [...txt];
 let arrFruitS = [];
 let arrFruitM = [];
 let arrFruitL = [];
+let tapCount = 0;
 
 let font, font2, fruit1, fruit2, fruit3, fruit4, fruit5, fruit6, fruit7, fruit8, fruit9;
 
@@ -57,10 +58,17 @@ function draw() {
     drawStyles(pointsArray[i], argsArray[i].ropeColour, argsArray[i].style, arrImg[i]);
   }
 
+  noStroke();
+  textFont(font);
+  textLeading(28);
+  textSize(30);
+  text('Tap count: '+tapCount, 20, 45);
+
 }
 
 function mousePressed(){
-  generateRope(1, mouseX, mouseY)
+  generateRope(1, mouseX, mouseY);
+  tapCount++;
 }
 
 function mouseMoved(){
