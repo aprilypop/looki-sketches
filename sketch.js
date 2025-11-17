@@ -71,6 +71,20 @@ function mousePressed(){
   tapCount++;
 }
 
+function handleEnd(event) {
+  event.preventDefault();
+
+  for (const changedTouch of event.changedTouches) {
+    const touch = ongoingTouches.get(changedTouch.identifier);
+    if (!touch) {
+      console.error(`End: Could not find touch ${changedTouch.identifier}`);
+      continue;
+    }
+    tapCount++;
+  }
+}
+canvas.addEventListener("touchend", handleEnd);
+
 function mouseMoved(){
   for (var i in argsArray) {
     let point = ropeArray[i].getPoint(floor((ropeArray[i].getPointLength()-1)/2));
