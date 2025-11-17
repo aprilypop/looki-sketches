@@ -4,9 +4,9 @@ html, body {
 	font-family: ABC Social Condensed Black;
 	font-weight: 900;
   background-color: whitesmoke;
-  @media (max-width: 600px) {
+  /*@media (max-width: 600px) {
     font-size:24px;
-  }
+  }*/
 }
 
 canvas {
@@ -70,9 +70,9 @@ body {
 
 }
 .copyright {
-  @media (max-width: 600px) {
+  /*@media (max-width: 600px) {
     font-size:32px;
-  }
+  }*/
 	margin: 12px;
   white-space: nowrap;
 }
