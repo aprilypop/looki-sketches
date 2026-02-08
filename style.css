@@ -117,3 +117,34 @@ a:hover {
   background-color: #ED7BC9;
   transform: rotate(5deg)
 }
+.looki-page {
+  margin: 16px;
+  border: 8px solid;
+}
+.looki-section {
+  margin: 8px;
+  border: 8px solid;
+}
+.cart {
+  text-align: end;
+  margin: 8px;
+  font-size: 20px;
+}
+.looki-logo-temp {
+  margin-left: 32px;
+}
+.looki-end-text {
+  font-size: 24px;
+  margin: 16px;
+}
+.looki-temp-flex{
+  display: flex;
+}
+#dress-up {
+  font-size:40px;
+}
+.looki-temp-flex-item{
+  margin:16px;
+  flex: 1;
+  font-size:24px;
+}
